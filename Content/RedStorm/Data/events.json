@@ -1,0 +1,75 @@
+{
+ "EVENTS": [
+  {
+   "id": "sanction",
+   "name": "國際制裁",
+   "dur": 60.0,
+   "news": "安理會通過對 %s 的新一輪制裁，礦石出口收入銳減。",
+   "bad": true
+  },
+  {
+   "id": "hack",
+   "name": "電網遭駭",
+   "dur": 40.0,
+   "news": "%s 電網遭到大規模網路攻擊，多座電廠離線。",
+   "bad": true
+  },
+  {
+   "id": "strike",
+   "name": "軍工罷工",
+   "dur": 70.0,
+   "news": "%s 軍工廠工人罷工，裝備交付延宕。",
+   "bad": true
+  },
+  {
+   "id": "inflate",
+   "name": "貨幣貶值",
+   "dur": 75.0,
+   "news": "%s 貨幣對美元重挫，進口裝備成本飆升 30%%。",
+   "bad": true
+  },
+  {
+   "id": "aid",
+   "name": "軍事援助",
+   "dur": 0.0,
+   "news": "盟國軍援抵達 %s：一批現金與裝備已到位。",
+   "bad": false
+  },
+  {
+   "id": "oil",
+   "name": "油價飆漲",
+   "dur": 80.0,
+   "news": "中東局勢緊張，油價飆漲，%s 的油井收入倍增。",
+   "bad": false
+  },
+  {
+   "id": "boom",
+   "name": "軍工訂單",
+   "dur": 70.0,
+   "news": "%s 獲得大筆軍工訂單，生產線全速運轉。",
+   "bad": false
+  },
+  {
+   "id": "opinion",
+   "name": "輿論風向",
+   "dur": 90.0,
+   "news": "國際輿論轉向，%s 短期內難以締結新條約。",
+   "bad": true
+  },
+  {
+   "id": "leak",
+   "name": "情報外洩",
+   "dur": 0.0,
+   "news": "駭客公開了 %s 的衛星影像，敵方部署一覽無遺。",
+   "bad": true
+  },
+  {
+   "id": "ceasefire",
+   "name": "人道停火",
+   "dur": 45.0,
+   "news": "聯合國斡旋達成 45 秒人道停火，各方暫停炮火。",
+   "bad": false,
+   "global": true
+  }
+ ]
+}

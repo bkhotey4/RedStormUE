@@ -1,0 +1,204 @@
+{
+ "LIST": [
+  {
+   "id": "m1",
+   "name": "任務一：前哨突擊",
+   "faction": "allies",
+   "enemy": "soviet",
+   "headline": "COMMANDO TEAM DROPPED BEHIND ENEMY LINES",
+   "map": {
+    "name": "前哨",
+    "theme": "temperate",
+    "layout": "plains",
+    "size": 64
+   },
+   "seed": 1101,
+   "money": 1500,
+   "brief": "指揮官，集團軍在北方建立了一座前哨基地。\n你沒有基地車，只有一支突擊小隊（含突擊隊員與工程師）。\n\n目標：摧毀敵方所有建築。\n提示：用工程師佔領集團軍兵營，就能訓練集團軍步兵當援軍！突擊隊員可用 C4 炸毀建築。"
+  },
+  {
+   "id": "m2",
+   "name": "任務二：堅守陣地",
+   "faction": "soviet",
+   "enemy": "allies",
+   "headline": "FORWARD BASE UNDER SIEGE, REINFORCEMENTS 10 MINUTES OUT",
+   "map": {
+    "name": "堅守",
+    "theme": "snow",
+    "layout": "canyon",
+    "size": 72
+   },
+   "seed": 2202,
+   "money": 6000,
+   "brief": "同志，聯盟軍大軍壓境！我們的基地必須撐住。\n\n目標：堅守 10 分鐘，直到援軍抵達。\n提示：盡快建造電弧防禦塔與防空炮，保護好精煉廠。"
+  },
+  {
+   "id": "m3",
+   "name": "任務三：無人機戰爭",
+   "faction": "allies",
+   "enemy": "soviet",
+   "headline": "LOITERING MUNITIONS REWRITE THE RULES OF THE DESERT",
+   "map": {
+    "name": "無人機",
+    "theme": "desert",
+    "layout": "plains",
+    "size": 80
+   },
+   "seed": 3303,
+   "money": 10000,
+   "brief": "敵軍大量使用柳葉刀巡飛彈與見證者自殺無人機。\n\n目標：摧毀敵方所有建築。\n提示：電子戰車與反無人機干擾塔能讓範圍內的敵方無人機墜毀；星鏈偵察可以找出敵方基地。"
+  },
+  {
+   "id": "m4",
+   "name": "任務四：核危機",
+   "faction": "allies",
+   "enemy": "soviet",
+   "headline": "SILO DETECTED: NUCLEAR COUNTDOWN HAS BEGUN",
+   "map": {
+    "name": "核危機",
+    "theme": "temperate",
+    "layout": "coast",
+    "size": 80
+   },
+   "seed": 4404,
+   "money": 12000,
+   "brief": "情報顯示集團軍的核彈發射井已經開始充能！\n\n目標：在核彈摧毀我們之前，炸掉敵方的核彈發射井。\n提示：海馬斯與光束坦克擅長拆除建築；也可以建造造船廠從海上進攻。"
+  },
+  {
+   "id": "h1",
+   "name": "混合戰爭 I：黑暗黎明",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "usa",
+   "enemy_country": "russia",
+   "map": {
+    "name": "黑暗黎明",
+    "theme": "temperate",
+    "layout": "plains",
+    "size": 80
+   },
+   "seed": 5101,
+   "money": 6000,
+   "headline": "BLACKOUT: ENERGY ATTACK CRIPPLES FORWARD BASE",
+   "brief": "【RSN 快訊】敵方切斷了我方前線基地的能源供應，電網一片漆黑。無人機已在黑暗中逼近。\n\n目標：撐過 8 分鐘，並在結束前讓電力恢復正常（發電量大於耗電量）。\n提示：敵方會重複使用「能源斷供」，多蓋幾座發電廠才有緩衝；反無人機干擾塔能擋住見證者。"
+  },
+  {
+   "id": "h2",
+   "name": "混合戰爭 II：蜂群",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "ukraine",
+   "enemy_country": "russia",
+   "map": {
+    "name": "蜂群",
+    "theme": "temperate",
+    "layout": "river",
+    "size": 96
+   },
+   "seed": 5202,
+   "money": 9000,
+   "headline": "DRONE SWARMS CROSS THE RIVER AS ARMOR STALLS",
+   "brief": "【RSN 快訊】裝甲部隊在河岸被電戰車與干擾塔釘死，唯一能越過防線的是無人機。\n\n目標：摧毀敵方所有建築。\n提示：你的 FPV 與 TB2 便宜 35%，無人機蜂群充能更快；先用海馬斯打掉干擾塔，無人機才飛得過去。"
+  },
+  {
+   "id": "h3",
+   "name": "混合戰爭 III：凍結",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "usa",
+   "enemy_country": "iran",
+   "map": {
+    "name": "凍結",
+    "theme": "desert",
+    "layout": "canyon",
+    "size": 96
+   },
+   "seed": 5303,
+   "money": 8000,
+   "headline": "SANCTIONS BITE: RESERVES FROZEN, PRODUCTION HALTS",
+   "brief": "【RSN 快訊】財政部宣布對敵方實施全面制裁。情報單位要求以間諜滲透摧毀其經濟。\n\n目標：用間諜成功滲透 3 座敵方建築，並發動一次「金融制裁」。\n提示：間諜不會被防禦塔攻擊，但靠近敵方步兵會被識破。精煉廠偷錢、發電廠停電、雷達揭露基地。"
+  },
+  {
+   "id": "h4",
+   "name": "混合戰爭 IV：紅海封鎖",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "usa",
+   "enemy_country": "yemen",
+   "map": {
+    "name": "紅海",
+    "theme": "desert",
+    "layout": "gulf",
+    "size": 128
+   },
+   "seed": 5404,
+   "money": 12000,
+   "headline": "SHIPPING LANES CLOSED AS DRONE BOATS STRIKE TANKERS",
+   "brief": "【RSN 快訊】敵方以見證者無人機與武裝快艇封鎖海峽，油輪不敢出港。航母戰鬥群奉命恢復航運。\n\n目標：摧毀敵方造船廠、無人機指揮站與所有艦艇。\n提示：航空母艦的艦載機可打擊 13 格內目標；驅逐艦的神盾系統能攔截無人機。"
+  },
+  {
+   "id": "h5",
+   "name": "混合戰爭 V：海峽",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "taiwan",
+   "enemy_country": "china",
+   "map": {
+    "name": "海峽",
+    "theme": "tropical",
+    "layout": "strait",
+    "size": 128
+   },
+   "seed": 5505,
+   "money": 14000,
+   "headline": "AMPHIBIOUS LANDINGS REPORTED ON THE WESTERN SHORE",
+   "brief": "【RSN 快訊】對岸的登陸部隊已在西側海灘上岸，東風飛彈隨時可能落下。島上的防線必須撐到增援抵達。\n\n目標：堅守 15 分鐘。\n提示：你的防禦建築便宜 25%、生命 +30%；雄風飛彈車對艦艇雙倍傷害。每隔一段時間西岸會有新一波登陸。"
+  },
+  {
+   "id": "h6",
+   "name": "混合戰爭 VI：同盟",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "random",
+   "country": "japan",
+   "enemy_country": "random",
+   "enemies": 3,
+   "ffa": true,
+   "map": {
+    "name": "同盟",
+    "theme": "temperate",
+    "layout": "lake",
+    "size": 112
+   },
+   "seed": 5606,
+   "money": 10000,
+   "headline": "THREE-WAY WAR: DIPLOMATS SCRAMBLE FOR ALLIES",
+   "brief": "【RSN 快訊】三個勢力混戰，沒有人撐得過孤軍奮戰。外交官正在尋找願意結盟的夥伴。\n\n目標：與至少一名電腦締結同盟（按 T），然後消滅所有非盟友。\n提示：好感度隨時間上升，不要攻擊你想結盟的對象。結盟後可呼叫「盟友支援」。"
+  },
+  {
+   "id": "h7",
+   "name": "混合戰爭 VII：東風",
+   "camp": "hybrid",
+   "faction": "allies",
+   "enemy": "soviet",
+   "country": "usa",
+   "enemy_country": "china",
+   "enemies": 2,
+   "map": {
+    "name": "東風",
+    "theme": "desert",
+    "layout": "coast",
+    "size": 128
+   },
+   "seed": 5707,
+   "money": 15000,
+   "headline": "TWO SILOS ARMED: THE CLOCK IS RUNNING",
+   "brief": "【RSN 快訊】兩個敵對勢力同時完成超級武器部署，倒數已經開始。這是混合戰爭的最後一役。\n\n目標：摧毀兩名敵人的所有超級武器建築（核彈發射井 / 氣候干預站）與建造廠。\n提示：注意畫面上方的倒數。用星鏈偵察找出發射井，間諜可以重置倒數。"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "PRESETS": [
+  {
+   "name": "綠野平原",
+   "theme": "temperate",
+   "layout": "plains",
+   "size": 100,
+   "desc": "開闊草原，適合新手。"
+  },
+  {
+   "name": "雙河谷地",
+   "theme": "temperate",
+   "layout": "river",
+   "size": 112,
+   "desc": "大河橫貫戰場，只有數個淺灘可以通過。"
+  },
+  {
+   "name": "沙漠風暴",
+   "theme": "desert",
+   "layout": "canyon",
+   "size": 112,
+   "desc": "峽谷縱橫的沙漠，爭奪狹窄通道。"
+  },
+  {
+   "name": "冰雪前線",
+   "theme": "snow",
+   "layout": "lake",
+   "size": 112,
+   "desc": "冰封湖泊位於中央，資源集中在湖岸。"
+  },
+  {
+   "name": "焦土荒原",
+   "theme": "desert",
+   "layout": "plains",
+   "size": 144,
+   "desc": "巨大的荒漠平原，適合多人混戰。"
+  },
+  {
+   "name": "寒冬峽谷",
+   "theme": "snow",
+   "layout": "canyon",
+   "size": 100,
+   "desc": "雪山之間的狹路相逢。"
+  },
+  {
+   "name": "群島湖區",
+   "theme": "temperate",
+   "layout": "lake",
+   "size": 128,
+   "desc": "湖泊遍布的大地圖。"
+  },
+  {
+   "name": "海岸決戰",
+   "theme": "temperate",
+   "layout": "coast",
+   "size": 112,
+   "desc": "雙方基地都靠海，可建造造船廠發展海軍。"
+  },
+  {
+   "name": "熱帶海灣",
+   "theme": "tropical",
+   "layout": "coast",
+   "size": 120,
+   "desc": "棕櫚樹環繞的海灣與紅土峭壁，海陸空全面作戰。"
+  },
+  {
+   "name": "棕櫚群島",
+   "theme": "tropical",
+   "layout": "lake",
+   "size": 120,
+   "desc": "熱帶潟湖散布，峭壁與叢林交錯。"
+  },
+  {
+   "name": "紅岩叢林",
+   "theme": "tropical",
+   "layout": "canyon",
+   "size": 112,
+   "desc": "紅土峭壁切割的叢林戰場，搶占隘口。"
+  },
+  {
+   "name": "台灣海峽",
+   "theme": "tropical",
+   "layout": "strait",
+   "size": 160,
+   "desc": "東側島嶼、西側大陸，中央海峽只有澎湖列島可落腳。島上東部是高山。需要海軍與空軍跨海作戰。"
+  },
+  {
+   "name": "波斯灣",
+   "theme": "desert",
+   "layout": "gulf",
+   "size": 160,
+   "desc": "狹長海灣斜貫沙漠，油井密布，荷莫茲海峽是唯一的出海口。"
+  },
+  {
+   "name": "歐亞大平原",
+   "theme": "temperate",
+   "layout": "plains",
+   "size": 192,
+   "desc": "超巨型平原，4 名玩家的長期消耗戰。"
+  }
+ ],
+ "THEMES": {
+  "temperate": {
+   "base": "grass",
+   "dirt": "dirt",
+   "alt": "sand",
+   "rock": "rock",
+   "water": "water",
+   "mini": [
+    [
+     0.3,
+     0.42,
+     0.16
+    ],
+    [
+     0.42,
+     0.34,
+     0.22
+    ],
+    [
+     0.66,
+     0.58,
+     0.4
+    ],
+    [
+     0.1,
+     0.25,
+     0.38
+    ],
+    [
+     0.42,
+     0.4,
+     0.37
+    ],
+    [
+     0.3,
+     0.3,
+     0.3
+    ]
+   ],
+   "trees": [
+    [
+     "tree",
+     0
+    ],
+    [
+     "tree",
+     1
+    ],
+    [
+     "tree",
+     2
+    ],
+    [
+     "tree",
+     3
+    ],
+    [
+     "tree",
+     4
+    ],
+    [
+     "tree",
+     5
+    ],
+    [
+     "tree",
+     6
+    ],
+    [
+     "tree",
+     7
+    ]
+   ],
+   "tree_density": 0.55,
+   "deco": [
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14
+   ],
+   "clear": [
+    0.05,
+    0.06,
+    0.04
+   ]
+  },
+  "desert": {
+   "base": "sand",
+   "dirt": "dirt",
+   "alt": "dune",
+   "rock": "rock_trop",
+   "water": "water",
+   "rock_sprite": "cliff",
+   "mini": [
+    [
+     0.7,
+     0.62,
+     0.44
+    ],
+    [
+     0.45,
+     0.36,
+     0.24
+    ],
+    [
+     0.78,
+     0.7,
+     0.52
+    ],
+    [
+     0.1,
+     0.25,
+     0.38
+    ],
+    [
+     0.44,
+     0.4,
+     0.35
+    ],
+    [
+     0.3,
+     0.3,
+     0.3
+    ]
+   ],
+   "trees": [
+    [
+     "palm",
+     0
+    ],
+    [
+     "palm",
+     1
+    ],
+    [
+     "palm",
+     2
+    ],
+    [
+     "palm",
+     3
+    ],
+    [
+     "palm",
+     4
+    ],
+    [
+     "palm",
+     5
+    ],
+    [
+     "tree",
+     2
+    ]
+   ],
+   "tree_density": 0.2,
+   "deco": [
+    8,
+    9,
+    10,
+    11,
+    8,
+    9,
+    2,
+    13,
+    15
+   ],
+   "clear": [
+    0.08,
+    0.06,
+    0.04
+   ]
+  },
+  "tropical": {
+   "base": "grass_trop",
+   "dirt": "dirt_trop",
+   "alt": "beach",
+   "rock": "rock_trop",
+   "water": "water",
+   "rock_sprite": "cliff",
+   "beach": 2,
+   "mini": [
+    [
+     0.3,
+     0.48,
+     0.1
+    ],
+    [
+     0.52,
+     0.33,
+     0.18
+    ],
+    [
+     0.84,
+     0.75,
+     0.54
+    ],
+    [
+     0.06,
+     0.18,
+     0.42
+    ],
+    [
+     0.62,
+     0.4,
+     0.22
+    ],
+    [
+     0.3,
+     0.3,
+     0.3
+    ]
+   ],
+   "trees": [
+    [
+     "palm",
+     0
+    ],
+    [
+     "palm",
+     1
+    ],
+    [
+     "palm",
+     2
+    ],
+    [
+     "palm",
+     3
+    ],
+    [
+     "palm",
+     4
+    ],
+    [
+     "palm",
+     5
+    ],
+    [
+     "palm",
+     0
+    ],
+    [
+     "palm",
+     3
+    ],
+    [
+     "tree",
+     0
+    ],
+    [
+     "tree",
+     2
+    ]
+   ],
+   "tree_density": 0.5,
+   "water_tint": [
+    0.62,
+    0.78,
+    1.12
+   ],
+   "deco": [
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14
+   ],
+   "clear": [
+    0.04,
+    0.06,
+    0.03
+   ]
+  },
+  "snow": {
+   "base": "snow",
+   "dirt": "snowdirt",
+   "alt": "ice",
+   "rock": "rock",
+   "water": "water",
+   "mini": [
+    [
+     0.85,
+     0.88,
+     0.92
+    ],
+    [
+     0.55,
+     0.55,
+     0.55
+    ],
+    [
+     0.7,
+     0.82,
+     0.92
+    ],
+    [
+     0.12,
+     0.25,
+     0.38
+    ],
+    [
+     0.4,
+     0.4,
+     0.42
+    ],
+    [
+     0.35,
+     0.35,
+     0.36
+    ]
+   ],
+   "trees": [
+    [
+     "snowpine",
+     0
+    ],
+    [
+     "snowpine",
+     1
+    ],
+    [
+     "snowpine",
+     2
+    ],
+    [
+     "snowpine",
+     3
+    ],
+    [
+     "snowpine",
+     4
+    ],
+    [
+     "snowpine",
+     5
+    ]
+   ],
+   "tree_density": 0.5,
+   "deco": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    14
+   ],
+   "clear": [
+    0.05,
+    0.06,
+    0.08
+   ]
+  }
+ }
+}

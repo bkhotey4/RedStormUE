@@ -1,0 +1,2737 @@
+{
+ "FACTIONS": {
+  "allies": {
+   "name": "西方聯盟",
+   "color": [
+    0.22,
+    0.52,
+    1.0
+   ],
+   "infantry": "a_gi"
+  },
+  "soviet": {
+   "name": "東方集團",
+   "color": [
+    0.92,
+    0.16,
+    0.12
+   ],
+   "infantry": "s_con"
+  }
+ },
+ "WARHEADS": {
+  "small": {
+   "inf": 1.0,
+   "light": 0.45,
+   "heavy": 0.25,
+   "bld": 0.15,
+   "air": 0.5
+  },
+  "ap": {
+   "inf": 0.35,
+   "light": 0.9,
+   "heavy": 1.0,
+   "bld": 0.6,
+   "air": 1.0
+  },
+  "he": {
+   "inf": 1.0,
+   "light": 0.8,
+   "heavy": 0.55,
+   "bld": 1.0,
+   "air": 0.0
+  },
+  "sniper": {
+   "inf": 1.0,
+   "light": 0.05,
+   "heavy": 0.03,
+   "bld": 0.0,
+   "air": 0.0
+  },
+  "elec": {
+   "inf": 1.0,
+   "light": 0.9,
+   "heavy": 0.85,
+   "bld": 0.5,
+   "air": 0.0
+  },
+  "laser": {
+   "inf": 0.9,
+   "light": 1.0,
+   "heavy": 0.8,
+   "bld": 1.1,
+   "air": 0.0
+  },
+  "flak": {
+   "inf": 0.6,
+   "light": 0.2,
+   "heavy": 0.1,
+   "bld": 0.05,
+   "air": 1.0
+  },
+  "bomb": {
+   "inf": 1.0,
+   "light": 1.0,
+   "heavy": 0.8,
+   "bld": 1.2,
+   "air": 0.0
+  },
+  "fire": {
+   "inf": 1.4,
+   "light": 1.0,
+   "heavy": 0.5,
+   "bld": 1.1,
+   "air": 0.0
+  },
+  "drone": {
+   "inf": 0.8,
+   "light": 1.1,
+   "heavy": 1.0,
+   "bld": 0.7,
+   "air": 0.0
+  },
+  "topatk": {
+   "inf": 0.3,
+   "light": 1.1,
+   "heavy": 1.25,
+   "bld": 0.5,
+   "air": 0.8,
+   "naval": 0.9
+  },
+  "torp": {
+   "inf": 0.0,
+   "light": 0.0,
+   "heavy": 0.0,
+   "bld": 0.0,
+   "air": 0.0,
+   "naval": 1.3
+  },
+  "antiship": {
+   "inf": 0.3,
+   "light": 1.0,
+   "heavy": 1.1,
+   "bld": 0.6,
+   "air": 0.0,
+   "naval": 2.0
+  }
+ },
+ "WEAPONS": {
+  "rifle": {
+   "dmg": 15,
+   "rof": 0.8,
+   "range": 5.0,
+   "proj": "bullet",
+   "wh": "small",
+   "snd": "mg"
+  },
+  "conscript": {
+   "dmg": 12,
+   "rof": 0.8,
+   "range": 4.5,
+   "proj": "bullet",
+   "wh": "small",
+   "snd": "mg"
+  },
+  "rocket": {
+   "dmg": 45,
+   "rof": 1.8,
+   "range": 6.0,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket",
+   "air": true
+  },
+  "commando": {
+   "dmg": 150,
+   "rof": 0.55,
+   "range": 5.5,
+   "proj": "bullet",
+   "wh": "sniper",
+   "snd": "pistol"
+  },
+  "tank_l": {
+   "dmg": 60,
+   "rof": 1.4,
+   "range": 5.5,
+   "proj": "shell",
+   "wh": "ap",
+   "snd": "cannon"
+  },
+  "tank_h": {
+   "dmg": 85,
+   "rof": 1.6,
+   "range": 5.5,
+   "proj": "shell",
+   "wh": "ap",
+   "snd": "cannon"
+  },
+  "mammoth": {
+   "dmg": 110,
+   "rof": 2.0,
+   "range": 6.0,
+   "proj": "shell",
+   "wh": "ap",
+   "snd": "cannon",
+   "burst": 2
+  },
+  "mammoth_aa": {
+   "dmg": 40,
+   "rof": 1.5,
+   "range": 7.0,
+   "proj": "rocket",
+   "wh": "flak",
+   "snd": "rocket",
+   "air": true,
+   "air_only": true
+  },
+  "arty": {
+   "dmg": 160,
+   "rof": 4.5,
+   "range": 12.0,
+   "min_range": 3.0,
+   "proj": "arty",
+   "wh": "he",
+   "splash": 1.4,
+   "snd": "rocket"
+  },
+  "ifv": {
+   "dmg": 35,
+   "rof": 1.1,
+   "range": 6.0,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket",
+   "air": true
+  },
+  "beam_tank": {
+   "dmg": 110,
+   "rof": 2.8,
+   "range": 7.5,
+   "proj": "beam",
+   "wh": "laser",
+   "splash": 0.8,
+   "snd": "laser"
+  },
+  "tesla_inf": {
+   "dmg": 55,
+   "rof": 1.3,
+   "range": 3.5,
+   "proj": "tesla",
+   "wh": "elec",
+   "snd": "zap"
+  },
+  "pillbox": {
+   "dmg": 22,
+   "rof": 0.35,
+   "range": 6.0,
+   "proj": "bullet",
+   "wh": "small",
+   "snd": "mg"
+  },
+  "tesla_coil": {
+   "dmg": 140,
+   "rof": 1.8,
+   "range": 7.0,
+   "proj": "tesla",
+   "wh": "elec",
+   "snd": "zap",
+   "power": true
+  },
+  "laser_tower": {
+   "dmg": 130,
+   "rof": 2.2,
+   "range": 8.0,
+   "proj": "beam",
+   "wh": "laser",
+   "splash": 0.8,
+   "snd": "laser",
+   "power": true
+  },
+  "aa_missile": {
+   "dmg": 70,
+   "rof": 1.2,
+   "range": 9.0,
+   "proj": "rocket",
+   "wh": "flak",
+   "snd": "rocket",
+   "air": true,
+   "air_only": true,
+   "power": true
+  },
+  "flak_cannon": {
+   "dmg": 30,
+   "rof": 0.45,
+   "range": 8.0,
+   "proj": "flak",
+   "wh": "flak",
+   "snd": "flak",
+   "air": true,
+   "air_only": true,
+   "power": true
+  },
+  "flak_trk": {
+   "dmg": 25,
+   "rof": 0.5,
+   "range": 7.0,
+   "proj": "flak",
+   "wh": "flak",
+   "snd": "flak",
+   "air": true
+  },
+  "jet_missile": {
+   "dmg": 110,
+   "rof": 0.5,
+   "range": 5.0,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket",
+   "ammo": 2
+  },
+  "navgun": {
+   "dmg": 70,
+   "rof": 1.5,
+   "range": 8.0,
+   "proj": "shell",
+   "wh": "ap",
+   "snd": "cannon",
+   "burst": 2
+  },
+  "aegis": {
+   "dmg": 60,
+   "rof": 0.9,
+   "range": 10.0,
+   "proj": "rocket",
+   "wh": "flak",
+   "snd": "rocket",
+   "air": true,
+   "air_only": true
+  },
+  "torpedo": {
+   "dmg": 180,
+   "rof": 3.0,
+   "range": 7.0,
+   "proj": "torpedo",
+   "wh": "torp",
+   "snd": "rocket"
+  },
+  "dread_msl": {
+   "dmg": 220,
+   "rof": 6.0,
+   "range": 18.0,
+   "min_range": 4.0,
+   "proj": "ballistic",
+   "wh": "he",
+   "splash": 1.4,
+   "snd": "missile",
+   "burst": 2
+  },
+  "javelin": {
+   "dmg": 95,
+   "rof": 3.2,
+   "range": 8.0,
+   "proj": "topattack",
+   "wh": "topatk",
+   "snd": "rocket",
+   "air": true
+  },
+  "gmlrs": {
+   "dmg": 120,
+   "rof": 7.0,
+   "range": 16.0,
+   "min_range": 3.0,
+   "proj": "mlrs",
+   "wh": "he",
+   "splash": 1.1,
+   "snd": "rocket",
+   "burst": 4
+  },
+  "thermo": {
+   "dmg": 95,
+   "rof": 8.0,
+   "range": 7.0,
+   "min_range": 2.0,
+   "proj": "mlrs",
+   "wh": "fire",
+   "splash": 1.5,
+   "snd": "rocket",
+   "burst": 6
+  },
+  "iskander": {
+   "dmg": 650,
+   "rof": 22.0,
+   "range": 22.0,
+   "min_range": 5.0,
+   "proj": "ballistic",
+   "wh": "he",
+   "splash": 1.8,
+   "snd": "missile"
+  },
+  "tb2_missile": {
+   "dmg": 85,
+   "rof": 2.6,
+   "range": 6.0,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket"
+  },
+  "fpv": {
+   "dmg": 190,
+   "rof": 1.0,
+   "range": 0.45,
+   "proj": "kamikaze",
+   "wh": "drone",
+   "splash": 0.6,
+   "snd": "explode"
+  },
+  "lancet": {
+   "dmg": 360,
+   "rof": 1.0,
+   "range": 0.45,
+   "proj": "kamikaze",
+   "wh": "drone",
+   "splash": 0.7,
+   "snd": "explode"
+  },
+  "shahed": {
+   "dmg": 320,
+   "rof": 1.0,
+   "range": 0.45,
+   "proj": "kamikaze",
+   "wh": "bomb",
+   "splash": 1.2,
+   "snd": "explode"
+  },
+  "hellfire": {
+   "dmg": 80,
+   "rof": 1.8,
+   "range": 6.0,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket",
+   "burst": 2
+  },
+  "type10": {
+   "dmg": 72,
+   "rof": 1.15,
+   "range": 6.5,
+   "proj": "shell",
+   "wh": "ap",
+   "snd": "cannon"
+  },
+  "k9": {
+   "dmg": 175,
+   "rof": 3.6,
+   "range": 14.0,
+   "min_range": 3.0,
+   "proj": "arty",
+   "wh": "he",
+   "splash": 1.3,
+   "snd": "cannon"
+  },
+  "hf_msl": {
+   "dmg": 230,
+   "rof": 6.5,
+   "range": 13.0,
+   "proj": "topattack",
+   "wh": "antiship",
+   "snd": "missile",
+   "burst": 2
+  },
+  "seadrone": {
+   "dmg": 480,
+   "rof": 1.0,
+   "range": 0.9,
+   "proj": "kamikaze",
+   "wh": "antiship",
+   "splash": 0.9,
+   "snd": "explode"
+  },
+  "bmpt": {
+   "dmg": 26,
+   "rof": 0.3,
+   "range": 6.0,
+   "proj": "bullet",
+   "wh": "he",
+   "snd": "flak",
+   "air": true
+  },
+  "hwasong": {
+   "dmg": 950,
+   "rof": 38.0,
+   "range": 28.0,
+   "min_range": 6.0,
+   "proj": "ballistic",
+   "wh": "he",
+   "splash": 2.4,
+   "snd": "missile"
+  },
+  "boat_rkt": {
+   "dmg": 42,
+   "rof": 1.3,
+   "range": 6.0,
+   "proj": "rocket",
+   "wh": "antiship",
+   "snd": "rocket"
+  },
+  "ak": {
+   "dmg": 16,
+   "rof": 0.7,
+   "range": 5.0,
+   "proj": "bullet",
+   "wh": "small",
+   "snd": "mg"
+  },
+  "hmg": {
+   "dmg": 17,
+   "rof": 0.22,
+   "range": 5.5,
+   "proj": "bullet",
+   "wh": "small",
+   "snd": "mg",
+   "air": true
+  },
+  "carrier_cmd": {
+   "dmg": 1,
+   "rof": 3.0,
+   "range": 13.0,
+   "proj": "none",
+   "wh": "ap",
+   "snd": "jet"
+  },
+  "hornet_msl": {
+   "dmg": 95,
+   "rof": 0.5,
+   "range": 4.5,
+   "proj": "rocket",
+   "wh": "ap",
+   "snd": "rocket",
+   "ammo": 2
+  },
+  "airship_bomb": {
+   "dmg": 260,
+   "rof": 1.4,
+   "range": 0.7,
+   "proj": "bomb",
+   "wh": "bomb",
+   "splash": 1.5,
+   "snd": "bomb"
+  }
+ },
+ "UNITS": {
+  "a_gi": {
+   "name": "聯盟軍步兵",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 200,
+   "hp": 125,
+   "speed": 1.25,
+   "armor": "inf",
+   "weapon": "rifle",
+   "sight": 6,
+   "req": [
+    "bar"
+   ],
+   "desc": "基礎步兵，對付步兵有效。"
+  },
+  "a_rocket": {
+   "name": "火箭兵",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 300,
+   "hp": 125,
+   "speed": 1.1,
+   "armor": "inf",
+   "weapon": "rocket",
+   "sight": 6,
+   "req": [
+    "bar"
+   ],
+   "desc": "反裝甲步兵，也能對空。"
+  },
+  "a_eng": {
+   "name": "工程師",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 500,
+   "hp": 75,
+   "speed": 1.2,
+   "armor": "inf",
+   "weapon": "",
+   "sight": 5,
+   "req": [
+    "bar"
+   ],
+   "engineer": true,
+   "desc": "佔領敵方/中立建築，或修復我方建築。"
+  },
+  "a_cmdo": {
+   "name": "突擊隊員",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 1500,
+   "hp": 250,
+   "speed": 1.6,
+   "armor": "inf",
+   "weapon": "commando",
+   "sight": 7,
+   "req": [
+    "bar",
+    "tech"
+   ],
+   "c4": true,
+   "limit": 1,
+   "desc": "英雄單位。秒殺步兵，可用 C4 炸毀建築與載具。(限1名)"
+  },
+  "a_tank": {
+   "name": "灰狼坦克",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 700,
+   "hp": 320,
+   "speed": 2.0,
+   "armor": "heavy",
+   "weapon": "tank_l",
+   "sight": 6,
+   "req": [
+    "fac"
+   ],
+   "turret": true,
+   "desc": "快速的主戰坦克。"
+  },
+  "a_ifv": {
+   "name": "多功能戰車",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 600,
+   "hp": 220,
+   "speed": 2.5,
+   "armor": "light",
+   "weapon": "ifv",
+   "sight": 7,
+   "req": [
+    "fac"
+   ],
+   "turret": true,
+   "desc": "高速飛彈戰車，可對空對地。"
+  },
+  "a_beam": {
+   "name": "光束坦克",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1200,
+   "hp": 250,
+   "speed": 1.7,
+   "armor": "light",
+   "weapon": "beam_tank",
+   "sight": 8,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "desc": "遠程光束，拆除建築利器。"
+  },
+  "a_harv": {
+   "name": "聯盟軍採礦車",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1400,
+   "hp": 1000,
+   "speed": 1.4,
+   "armor": "heavy",
+   "weapon": "",
+   "sight": 4,
+   "req": [
+    "fac",
+    "ref"
+   ],
+   "harvester": true,
+   "desc": "採集礦石換取資金。"
+  },
+  "a_mcv": {
+   "name": "聯盟軍基地車",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 3000,
+   "hp": 1000,
+   "speed": 1.1,
+   "armor": "heavy",
+   "weapon": "",
+   "sight": 5,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "mcv": "a_cy",
+   "desc": "可展開成建造廠。(按 D 展開)"
+  },
+  "a_jet": {
+   "name": "攻擊戰機",
+   "faction": "allies",
+   "cat": "air",
+   "kind": "air",
+   "cost": 1200,
+   "hp": 150,
+   "speed": 5.0,
+   "armor": "air",
+   "weapon": "jet_missile",
+   "sight": 7,
+   "req": [
+    "airfield"
+   ],
+   "jet": true,
+   "desc": "攻擊後返回機場補充彈藥。"
+  },
+  "a_jav": {
+   "name": "標槍飛彈兵",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 550,
+   "hp": 130,
+   "speed": 1.1,
+   "armor": "inf",
+   "weapon": "javelin",
+   "sight": 8,
+   "req": [
+    "bar",
+    "radar"
+   ],
+   "desc": "射後不理的頂部攻擊飛彈，專剋坦克，也能打無人機。"
+  },
+  "a_himars": {
+   "name": "海馬斯火箭車",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1500,
+   "hp": 220,
+   "speed": 2.1,
+   "armor": "light",
+   "weapon": "gmlrs",
+   "sight": 8,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "turret": true,
+   "desc": "超遠程精準火箭齊射，打了就跑。"
+  },
+  "a_ew": {
+   "name": "電子戰車",
+   "faction": "allies",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 800,
+   "hp": 220,
+   "speed": 2.0,
+   "armor": "light",
+   "weapon": "",
+   "sight": 8,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "ew": 6.0,
+   "desc": "干擾半徑 6 格內的敵方無人機，使其墜毀。"
+  },
+  "a_tb2": {
+   "name": "TB2 攻擊無人機",
+   "faction": "allies",
+   "cat": "air",
+   "kind": "air",
+   "cost": 900,
+   "hp": 120,
+   "speed": 2.2,
+   "armor": "air",
+   "weapon": "tb2_missile",
+   "sight": 9,
+   "req": [
+    "dronehub"
+   ],
+   "drone": true,
+   "loiter": true,
+   "desc": "滯空盤旋，以導彈精準獵殺裝甲。"
+  },
+  "a_fpv": {
+   "name": "FPV 自殺無人機",
+   "faction": "allies",
+   "cat": "air",
+   "kind": "air",
+   "cost": 150,
+   "hp": 30,
+   "speed": 5.5,
+   "armor": "air",
+   "weapon": "fpv",
+   "sight": 7,
+   "req": [
+    "dronehub"
+   ],
+   "drone": true,
+   "kamikaze": true,
+   "desc": "便宜又致命，衝撞目標自爆。"
+  },
+  "a_destroyer": {
+   "name": "驅逐艦",
+   "faction": "allies",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 1000,
+   "hp": 600,
+   "speed": 2.2,
+   "armor": "naval",
+   "weapon": "navgun",
+   "weapon2": "aegis",
+   "sight": 9,
+   "req": [
+    "yard"
+   ],
+   "turret": true,
+   "desc": "艦砲可攻擊岸上目標，並具防空能力。"
+  },
+  "a_carrier": {
+   "name": "神盾巡洋艦",
+   "faction": "allies",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 1600,
+   "hp": 900,
+   "speed": 1.6,
+   "armor": "naval",
+   "weapon": "dread_msl",
+   "weapon2": "aegis",
+   "sight": 10,
+   "req": [
+    "yard",
+    "tech"
+   ],
+   "desc": "遠程巡弋飛彈打擊岸上建築，強力防空。"
+  },
+  "s_con": {
+   "name": "義務兵",
+   "faction": "soviet",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 100,
+   "hp": 100,
+   "speed": 1.2,
+   "armor": "inf",
+   "weapon": "conscript",
+   "sight": 6,
+   "req": [
+    "bar"
+   ],
+   "desc": "便宜的基礎步兵。"
+  },
+  "s_flak": {
+   "name": "防空步兵",
+   "faction": "soviet",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 300,
+   "hp": 120,
+   "speed": 1.1,
+   "armor": "inf",
+   "weapon": "flak_trk",
+   "sight": 7,
+   "req": [
+    "bar"
+   ],
+   "desc": "對空火力強大。"
+  },
+  "s_eng": {
+   "name": "集團軍工程師",
+   "faction": "soviet",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 500,
+   "hp": 75,
+   "speed": 1.2,
+   "armor": "inf",
+   "weapon": "",
+   "sight": 5,
+   "req": [
+    "bar"
+   ],
+   "engineer": true,
+   "desc": "佔領敵方/中立建築，或修復我方建築。"
+  },
+  "s_tesla": {
+   "name": "電擊步兵",
+   "faction": "soviet",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 500,
+   "hp": 160,
+   "speed": 0.9,
+   "armor": "inf",
+   "weapon": "tesla_inf",
+   "sight": 6,
+   "req": [
+    "bar",
+    "radar"
+   ],
+   "desc": "電擊步兵，對車輛威脅大。"
+  },
+  "s_tank": {
+   "name": "重型坦克",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 900,
+   "hp": 400,
+   "speed": 1.8,
+   "armor": "heavy",
+   "weapon": "tank_h",
+   "sight": 6,
+   "req": [
+    "fac"
+   ],
+   "turret": true,
+   "desc": "堅固的主戰坦克。"
+  },
+  "s_flaktrk": {
+   "name": "防空履帶車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 500,
+   "hp": 240,
+   "speed": 2.2,
+   "armor": "light",
+   "weapon": "flak_trk",
+   "sight": 7,
+   "req": [
+    "fac"
+   ],
+   "turret": true,
+   "desc": "高速防空車。"
+  },
+  "s_arty": {
+   "name": "火箭炮車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 800,
+   "hp": 180,
+   "speed": 1.4,
+   "armor": "light",
+   "weapon": "arty",
+   "sight": 7,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "desc": "超遠程火箭，範圍傷害。"
+  },
+  "s_mammoth": {
+   "name": "巨熊重坦克",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1750,
+   "hp": 800,
+   "speed": 1.15,
+   "armor": "heavy",
+   "weapon": "mammoth",
+   "weapon2": "mammoth_aa",
+   "sight": 7,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "turret": true,
+   "heal": true,
+   "desc": "雙管重砲 + 防空飛彈，會自我修復。"
+  },
+  "s_harv": {
+   "name": "重裝採礦車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1400,
+   "hp": 1000,
+   "speed": 1.3,
+   "armor": "heavy",
+   "weapon": "",
+   "sight": 4,
+   "req": [
+    "fac",
+    "ref"
+   ],
+   "harvester": true,
+   "desc": "採集礦石換取資金。"
+  },
+  "s_mcv": {
+   "name": "集團軍基地車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 3000,
+   "hp": 1000,
+   "speed": 1.1,
+   "armor": "heavy",
+   "weapon": "",
+   "sight": 5,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "mcv": "s_cy",
+   "desc": "可展開成建造廠。(按 D 展開)"
+  },
+  "s_tos": {
+   "name": "TOS-1A 溫壓火箭車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1600,
+   "hp": 460,
+   "speed": 1.4,
+   "armor": "heavy",
+   "weapon": "thermo",
+   "sight": 7,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "turret": true,
+   "desc": "溫壓火箭齊射，大範圍焚毀步兵與建築。"
+  },
+  "s_iskander": {
+   "name": "伊斯坎德爾飛彈車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 2000,
+   "hp": 250,
+   "speed": 1.3,
+   "armor": "light",
+   "weapon": "iskander",
+   "sight": 7,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "desc": "超遠程彈道飛彈，一發摧毀建築。"
+  },
+  "s_ew": {
+   "name": "克拉蘇哈電戰車",
+   "faction": "soviet",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 800,
+   "hp": 240,
+   "speed": 1.9,
+   "armor": "light",
+   "weapon": "",
+   "sight": 8,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "ew": 6.0,
+   "desc": "干擾半徑 6 格內的敵方無人機，使其墜毀。"
+  },
+  "s_lancet": {
+   "name": "柳葉刀巡飛彈",
+   "faction": "soviet",
+   "cat": "air",
+   "kind": "air",
+   "cost": 300,
+   "hp": 45,
+   "speed": 4.2,
+   "armor": "air",
+   "weapon": "lancet",
+   "sight": 9,
+   "req": [
+    "dronehub"
+   ],
+   "drone": true,
+   "kamikaze": true,
+   "desc": "巡飛彈，鎖定裝甲與火砲後俯衝自爆。"
+  },
+  "s_shahed": {
+   "name": "見證者-136 無人機",
+   "faction": "soviet",
+   "cat": "air",
+   "kind": "air",
+   "cost": 250,
+   "hp": 60,
+   "speed": 2.4,
+   "armor": "air",
+   "weapon": "shahed",
+   "sight": 6,
+   "req": [
+    "dronehub"
+   ],
+   "drone": true,
+   "kamikaze": true,
+   "prefer_bld": true,
+   "desc": "長程自殺無人機，專門轟炸建築。"
+  },
+  "s_sub": {
+   "name": "攻擊潛艇",
+   "faction": "soviet",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 1000,
+   "hp": 500,
+   "speed": 2.0,
+   "armor": "naval",
+   "weapon": "torpedo",
+   "sight": 7,
+   "req": [
+    "yard"
+   ],
+   "sub": true,
+   "desc": "以魚雷獵殺敵艦。"
+  },
+  "s_dread": {
+   "name": "飛彈戰艦",
+   "faction": "soviet",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 2000,
+   "hp": 1000,
+   "speed": 1.4,
+   "armor": "naval",
+   "weapon": "dread_msl",
+   "sight": 9,
+   "req": [
+    "yard",
+    "tech"
+   ],
+   "desc": "超遠程飛彈轟炸岸上基地。"
+  },
+  "a_spy": {
+   "name": "間諜",
+   "faction": "allies",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 1000,
+   "hp": 100,
+   "speed": 1.35,
+   "armor": "inf",
+   "weapon": "",
+   "sight": 7,
+   "req": [
+    "bar",
+    "radar"
+   ],
+   "spy": true,
+   "desc": "偽裝成敵軍，防禦塔不會攻擊。滲透敵方建築：發電廠→停電 45 秒，精煉廠/金融→竊取資金，雷達→揭露敵方基地，超武→重置倒數，科技→新單位晉升老兵，其他生產建築→癱瘓生產 60 秒。靠近敵方步兵會被識破。"
+  },
+  "s_agent": {
+   "name": "特工",
+   "faction": "soviet",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 1000,
+   "hp": 110,
+   "speed": 1.3,
+   "armor": "inf",
+   "weapon": "",
+   "sight": 7,
+   "req": [
+    "bar",
+    "radar"
+   ],
+   "spy": true,
+   "desc": "偽裝成敵軍，防禦塔不會攻擊。滲透敵方建築：發電廠→停電 45 秒，精煉廠/天然氣→竊取資金，雷達→揭露敵方基地，超武→重置倒數，科技→新單位晉升老兵，其他生產建築→癱瘓生產 60 秒。靠近敵方步兵會被識破。"
+  },
+  "a_apache": {
+   "name": "阿帕契攻擊直升機",
+   "faction": "allies",
+   "country": "usa",
+   "cat": "air",
+   "kind": "air",
+   "cost": 1400,
+   "hp": 380,
+   "speed": 3.2,
+   "armor": "air",
+   "weapon": "hellfire",
+   "sight": 8,
+   "req": [
+    "airfield"
+   ],
+   "loiter": true,
+   "heli": true,
+   "desc": "【美國】重裝攻擊直升機，地獄火飛彈連射獵殺裝甲。"
+  },
+  "a_type10": {
+   "name": "10式戰車",
+   "faction": "allies",
+   "country": "japan",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1100,
+   "hp": 380,
+   "speed": 2.5,
+   "armor": "heavy",
+   "weapon": "type10",
+   "sight": 7,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "turret": true,
+   "desc": "【日本】輕量化高機動主戰車，射程更遠、射速更快。"
+  },
+  "a_k9": {
+   "name": "K9 雷霆自走砲",
+   "faction": "allies",
+   "country": "korea",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1300,
+   "hp": 320,
+   "speed": 1.9,
+   "armor": "light",
+   "weapon": "k9",
+   "sight": 7,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "turret": true,
+   "desc": "【韓國】155mm 自走砲，遠程精準砲擊。"
+  },
+  "a_hf": {
+   "name": "雄風飛彈車",
+   "faction": "allies",
+   "country": "taiwan",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1300,
+   "hp": 240,
+   "speed": 2.0,
+   "armor": "light",
+   "weapon": "hf_msl",
+   "sight": 8,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "desc": "【台灣】機動岸置反艦飛彈，對艦艇造成雙倍傷害，也能打擊裝甲。"
+  },
+  "a_tuojiang": {
+   "name": "沱江級匿蹤巡邏艦",
+   "faction": "allies",
+   "country": "taiwan",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 1200,
+   "hp": 520,
+   "speed": 3.0,
+   "armor": "naval",
+   "weapon": "hf_msl",
+   "sight": 10,
+   "req": [
+    "yard",
+    "radar"
+   ],
+   "desc": "【台灣】雙船體匿蹤艦，高速機動，雄風反艦飛彈對艦艇雙倍傷害。"
+  },
+  "a_seadrone": {
+   "name": "海上無人艇",
+   "faction": "allies",
+   "country": "ukraine",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 400,
+   "hp": 90,
+   "speed": 4.6,
+   "armor": "naval",
+   "weapon": "seadrone",
+   "sight": 7,
+   "req": [
+    "yard"
+   ],
+   "drone": true,
+   "desc": "【烏克蘭】高速自殺無人艇，衝撞敵艦自爆。"
+  },
+  "a_cvn": {
+   "name": "尼米茲級航空母艦",
+   "faction": "allies",
+   "country": "usa",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 2600,
+   "hp": 1500,
+   "speed": 1.2,
+   "armor": "naval",
+   "weapon": "carrier_cmd",
+   "weapon2": "aegis",
+   "sight": 11,
+   "req": [
+    "yard",
+    "tech"
+   ],
+   "carrier": "a_hornet",
+   "hangar": 3,
+   "limit": 2,
+   "desc": "【美國】艦載大黃蜂戰機出擊打擊 13 格內目標，返艦補給。具防空能力。(限2艘)"
+  },
+  "a_hornet": {
+   "name": "大黃蜂艦載機",
+   "faction": "allies",
+   "cat": "air",
+   "kind": "air",
+   "cost": 0,
+   "hp": 110,
+   "speed": 5.2,
+   "buildable": false,
+   "armor": "air",
+   "weapon": "hornet_msl",
+   "sight": 6,
+   "req": [],
+   "jet": true,
+   "desc": "航母艦載機。"
+  },
+  "s_cvn": {
+   "name": "遼寧號航空母艦",
+   "faction": "soviet",
+   "country": "china",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 2600,
+   "hp": 1600,
+   "speed": 1.1,
+   "armor": "naval",
+   "weapon": "carrier_cmd",
+   "weapon2": "aegis",
+   "sight": 11,
+   "req": [
+    "yard",
+    "tech"
+   ],
+   "carrier": "s_j15",
+   "hangar": 3,
+   "limit": 2,
+   "desc": "【中國】滑躍甲板航母，殲-15 艦載機出擊打擊 13 格內目標。具防空能力。(限2艘)"
+  },
+  "s_j15": {
+   "name": "殲-15 艦載機",
+   "faction": "soviet",
+   "cat": "air",
+   "kind": "air",
+   "cost": 0,
+   "hp": 120,
+   "speed": 5.0,
+   "buildable": false,
+   "armor": "air",
+   "weapon": "hornet_msl",
+   "sight": 6,
+   "req": [],
+   "jet": true,
+   "desc": "航母艦載機。"
+  },
+  "s_bmpt": {
+   "name": "BMPT 終結者",
+   "faction": "soviet",
+   "country": "russia",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 1300,
+   "hp": 480,
+   "speed": 1.9,
+   "armor": "heavy",
+   "weapon": "bmpt",
+   "sight": 7,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "turret": true,
+   "desc": "【俄羅斯】坦克支援戰車，雙 30mm 機砲橫掃步兵與無人機。"
+  },
+  "s_hwasong": {
+   "name": "火星機動飛彈",
+   "faction": "soviet",
+   "country": "nkorea",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 2500,
+   "hp": 300,
+   "speed": 1.0,
+   "armor": "light",
+   "weapon": "hwasong",
+   "sight": 7,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "limit": 2,
+   "desc": "【北韓】超大型彈道飛彈發射車，射程極遠、爆炸範圍巨大。(限2輛)"
+  },
+  "s_fastboat": {
+   "name": "快速攻擊艇",
+   "faction": "soviet",
+   "country": "iran",
+   "cat": "naval",
+   "kind": "ship",
+   "cost": 350,
+   "hp": 180,
+   "speed": 4.2,
+   "armor": "naval",
+   "weapon": "boat_rkt",
+   "sight": 7,
+   "req": [
+    "yard"
+   ],
+   "desc": "【伊朗】便宜高速的火箭快艇，蜂群戰術圍攻敵艦。"
+  },
+  "s_guerrilla": {
+   "name": "游擊隊員",
+   "faction": "soviet",
+   "country": "cuba",
+   "cat": "infantry",
+   "kind": "inf",
+   "cost": 150,
+   "hp": 115,
+   "speed": 1.5,
+   "armor": "inf",
+   "weapon": "ak",
+   "sight": 7,
+   "req": [
+    "bar"
+   ],
+   "heal": true,
+   "desc": "【古巴】叢林游擊兵，移動快速並會自我治療。"
+  },
+  "s_technical": {
+   "name": "武裝皮卡",
+   "faction": "soviet",
+   "country": "yemen",
+   "cat": "vehicle",
+   "kind": "veh",
+   "cost": 450,
+   "hp": 200,
+   "speed": 3.3,
+   "armor": "light",
+   "weapon": "hmg",
+   "sight": 7,
+   "req": [
+    "fac"
+   ],
+   "turret": true,
+   "desc": "【葉門】加裝重機槍的皮卡車，高速騷擾，也能打無人機。"
+  },
+  "s_airship": {
+   "name": "轟炸飛艇",
+   "faction": "soviet",
+   "cat": "air",
+   "kind": "air",
+   "cost": 2000,
+   "hp": 1400,
+   "speed": 0.6,
+   "armor": "air",
+   "weapon": "airship_bomb",
+   "sight": 6,
+   "req": [
+    "fac",
+    "tech"
+   ],
+   "airship": true,
+   "desc": "緩慢但毀滅性的轟炸飛艇。"
+  }
+ },
+ "BUILDINGS": {
+  "a_cy": {
+   "name": "聯盟軍建造廠",
+   "faction": "allies",
+   "role": "cy",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1500,
+   "power": 0,
+   "cost": 3000,
+   "sight": 7,
+   "buildable": false,
+   "desc": "建造所有建築物。"
+  },
+  "a_power": {
+   "name": "發電廠",
+   "faction": "allies",
+   "role": "power",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 750,
+   "power": 200,
+   "cost": 800,
+   "sight": 4,
+   "req": [
+    "cy"
+   ],
+   "desc": "提供 200 電力。"
+  },
+  "a_ref": {
+   "name": "礦石精煉廠",
+   "faction": "allies",
+   "role": "ref",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 900,
+   "power": -50,
+   "cost": 2000,
+   "sight": 5,
+   "req": [
+    "power"
+   ],
+   "desc": "附贈一台採礦車。"
+  },
+  "a_bar": {
+   "name": "聯盟軍兵營",
+   "faction": "allies",
+   "role": "bar",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 500,
+   "power": -10,
+   "cost": 500,
+   "sight": 5,
+   "req": [
+    "power"
+   ],
+   "desc": "訓練步兵。"
+  },
+  "a_fac": {
+   "name": "聯盟軍戰車工廠",
+   "faction": "allies",
+   "role": "fac",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -25,
+   "cost": 2000,
+   "sight": 5,
+   "req": [
+    "ref"
+   ],
+   "desc": "生產載具。"
+  },
+  "a_radar": {
+   "name": "航空作戰中心",
+   "faction": "allies",
+   "role": "radar",
+   "cat": "building",
+   "size": [
+    4,
+    2
+   ],
+   "runway": true,
+   "hp": 1000,
+   "power": -50,
+   "cost": 1000,
+   "sight": 10,
+   "req": [
+    "ref"
+   ],
+   "airfield": true,
+   "power_sw": "scan",
+   "desc": "開啟雷達小地圖、停放戰機，解鎖「星鏈偵察」。"
+  },
+  "a_tech": {
+   "name": "聯盟軍科技中心",
+   "faction": "allies",
+   "role": "tech",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 500,
+   "power": -100,
+   "cost": 1800,
+   "sight": 5,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "desc": "解鎖高科技單位。"
+  },
+  "a_sw": {
+   "name": "氣候干預站",
+   "faction": "allies",
+   "role": "sw",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -200,
+   "cost": 5000,
+   "sight": 5,
+   "req": [
+    "tech"
+   ],
+   "limit": 1,
+   "super": "storm",
+   "power_sw": "storm",
+   "desc": "超級武器：召喚雷暴打擊。"
+  },
+  "a_pill": {
+   "name": "碉堡",
+   "faction": "allies",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 400,
+   "power": 0,
+   "cost": 500,
+   "sight": 7,
+   "req": [
+    "bar"
+   ],
+   "weapon": "pillbox",
+   "desc": "對步兵防禦。"
+  },
+  "a_prism": {
+   "name": "光束塔",
+   "faction": "allies",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 600,
+   "power": -75,
+   "cost": 1500,
+   "sight": 9,
+   "req": [
+    "radar"
+   ],
+   "weapon": "laser_tower",
+   "desc": "強力光束防禦塔。(需要電力)"
+  },
+  "a_aa": {
+   "name": "愛國者飛彈",
+   "faction": "allies",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 500,
+   "power": -50,
+   "cost": 1000,
+   "sight": 9,
+   "req": [
+    "radar"
+   ],
+   "weapon": "aa_missile",
+   "desc": "對空防禦。(需要電力)"
+  },
+  "a_wall": {
+   "name": "圍牆",
+   "faction": "allies",
+   "role": "wall",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 300,
+   "power": 0,
+   "cost": 100,
+   "sight": 1,
+   "req": [
+    "bar"
+   ],
+   "wall": true,
+   "desc": "阻擋敵軍前進。"
+  },
+  "s_cy": {
+   "name": "集團軍建造廠",
+   "faction": "soviet",
+   "role": "cy",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1500,
+   "power": 0,
+   "cost": 3000,
+   "sight": 7,
+   "buildable": false,
+   "desc": "建造所有建築物。"
+  },
+  "s_power": {
+   "name": "核能反應爐",
+   "faction": "soviet",
+   "role": "power",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 750,
+   "power": 150,
+   "cost": 600,
+   "sight": 4,
+   "req": [
+    "cy"
+   ],
+   "desc": "提供 150 電力。"
+  },
+  "s_ref": {
+   "name": "集團軍精煉廠",
+   "faction": "soviet",
+   "role": "ref",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 900,
+   "power": -50,
+   "cost": 2000,
+   "sight": 5,
+   "req": [
+    "power"
+   ],
+   "desc": "附贈一台採礦車。"
+  },
+  "s_bar": {
+   "name": "集團軍兵營",
+   "faction": "soviet",
+   "role": "bar",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 500,
+   "power": -10,
+   "cost": 500,
+   "sight": 5,
+   "req": [
+    "power"
+   ],
+   "desc": "訓練步兵。"
+  },
+  "s_fac": {
+   "name": "集團軍戰車工廠",
+   "faction": "soviet",
+   "role": "fac",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -25,
+   "cost": 2000,
+   "sight": 5,
+   "req": [
+    "ref"
+   ],
+   "airfield": true,
+   "desc": "生產載具與飛艇。"
+  },
+  "s_radar": {
+   "name": "雷達站",
+   "faction": "soviet",
+   "role": "radar",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 1000,
+   "power": -50,
+   "cost": 1000,
+   "sight": 10,
+   "req": [
+    "ref"
+   ],
+   "power_sw": "jam",
+   "desc": "開啟雷達小地圖，解鎖「GPS 干擾」。"
+  },
+  "s_tech": {
+   "name": "集團軍國防研究院",
+   "faction": "soviet",
+   "role": "tech",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 500,
+   "power": -100,
+   "cost": 1800,
+   "sight": 5,
+   "req": [
+    "fac",
+    "radar"
+   ],
+   "desc": "解鎖高科技單位。"
+  },
+  "s_sw": {
+   "name": "核彈發射井",
+   "faction": "soviet",
+   "role": "sw",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -200,
+   "cost": 5000,
+   "sight": 5,
+   "req": [
+    "tech"
+   ],
+   "limit": 1,
+   "super": "nuke",
+   "power_sw": "nuke",
+   "desc": "超級武器：發射核子飛彈。"
+  },
+  "s_sentry": {
+   "name": "哨戒炮",
+   "faction": "soviet",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 400,
+   "power": 0,
+   "cost": 500,
+   "sight": 7,
+   "req": [
+    "bar"
+   ],
+   "weapon": "pillbox",
+   "desc": "對步兵防禦。"
+  },
+  "s_tcoil": {
+   "name": "電弧防禦塔",
+   "faction": "soviet",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 600,
+   "power": -75,
+   "cost": 1500,
+   "sight": 8,
+   "req": [
+    "radar"
+   ],
+   "weapon": "tesla_coil",
+   "desc": "強力電擊防禦塔。(需要電力)"
+  },
+  "s_flak": {
+   "name": "防空炮",
+   "faction": "soviet",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 500,
+   "power": -50,
+   "cost": 1000,
+   "sight": 9,
+   "req": [
+    "radar"
+   ],
+   "weapon": "flak_cannon",
+   "desc": "對空防禦。(需要電力)"
+  },
+  "s_wall": {
+   "name": "圍牆",
+   "faction": "soviet",
+   "role": "wall",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 300,
+   "power": 0,
+   "cost": 100,
+   "sight": 1,
+   "req": [
+    "bar"
+   ],
+   "wall": true,
+   "desc": "阻擋敵軍前進。"
+  },
+  "a_yard": {
+   "name": "聯盟軍造船廠",
+   "faction": "allies",
+   "role": "yard",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -30,
+   "cost": 1200,
+   "sight": 7,
+   "req": [
+    "ref"
+   ],
+   "naval": true,
+   "desc": "必須蓋在水面上，生產海軍艦艇。"
+  },
+  "s_yard": {
+   "name": "集團軍造船廠",
+   "faction": "soviet",
+   "role": "yard",
+   "cat": "building",
+   "size": [
+    3,
+    3
+   ],
+   "hp": 1000,
+   "power": -30,
+   "cost": 1200,
+   "sight": 7,
+   "req": [
+    "ref"
+   ],
+   "naval": true,
+   "desc": "必須蓋在水面上，生產海軍艦艇。"
+  },
+  "a_dronehub": {
+   "name": "無人機指揮站",
+   "faction": "allies",
+   "role": "dronehub",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 600,
+   "power": -40,
+   "cost": 1000,
+   "sight": 8,
+   "req": [
+    "radar"
+   ],
+   "power_sw": "swarm",
+   "desc": "生產無人機，解鎖「無人機蜂群」。"
+  },
+  "a_bank": {
+   "name": "國際金融中心",
+   "faction": "allies",
+   "role": "bank",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 700,
+   "power": -60,
+   "cost": 2500,
+   "sight": 5,
+   "req": [
+    "radar"
+   ],
+   "limit": 1,
+   "income": 30,
+   "power_sw": "sanction",
+   "desc": "每 3 秒 +$30，解鎖「金融制裁」。"
+  },
+  "a_ewt": {
+   "name": "反無人機干擾塔",
+   "faction": "allies",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 450,
+   "power": -40,
+   "cost": 700,
+   "sight": 8,
+   "req": [
+    "radar"
+   ],
+   "ew": 7.0,
+   "desc": "干擾半徑 7 格內的敵方無人機。(需要電力)"
+  },
+  "s_dronehub": {
+   "name": "無人機工廠",
+   "faction": "soviet",
+   "role": "dronehub",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 650,
+   "power": -40,
+   "cost": 1000,
+   "sight": 8,
+   "req": [
+    "radar"
+   ],
+   "power_sw": "swarm",
+   "desc": "生產無人機，解鎖「無人機蜂群」。"
+  },
+  "s_gas": {
+   "name": "天然氣輸出站",
+   "faction": "soviet",
+   "role": "bank",
+   "cat": "building",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 800,
+   "power": -30,
+   "cost": 2500,
+   "sight": 5,
+   "req": [
+    "radar"
+   ],
+   "limit": 1,
+   "income": 30,
+   "power_sw": "energy",
+   "desc": "每 3 秒 +$30，解鎖「能源斷供」。"
+  },
+  "s_ewt": {
+   "name": "電子干擾塔",
+   "faction": "soviet",
+   "role": "def",
+   "cat": "defense",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 450,
+   "power": -40,
+   "cost": 700,
+   "sight": 8,
+   "req": [
+    "radar"
+   ],
+   "ew": 7.0,
+   "desc": "干擾半徑 7 格內的敵方無人機。(需要電力)"
+  },
+  "civ_house": {
+   "name": "民房",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 700,
+   "power": 0,
+   "cost": 0,
+   "sight": 3,
+   "buildable": false,
+   "civ": true,
+   "garrison": 4,
+   "desc": "步兵可進駐並從中射擊。"
+  },
+  "civ_shop": {
+   "name": "商店",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 800,
+   "power": 0,
+   "cost": 0,
+   "sight": 3,
+   "buildable": false,
+   "civ": true,
+   "garrison": 5,
+   "desc": "步兵可進駐並從中射擊。"
+  },
+  "civ_office": {
+   "name": "辦公大樓",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 1400,
+   "power": 0,
+   "cost": 0,
+   "sight": 5,
+   "buildable": false,
+   "civ": true,
+   "garrison": 8,
+   "desc": "高樓，進駐的步兵射程增加。"
+  },
+  "civ_gas": {
+   "name": "加油站",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 400,
+   "power": 0,
+   "cost": 0,
+   "sight": 3,
+   "buildable": false,
+   "civ": true,
+   "explode": true,
+   "desc": "被摧毀時會大爆炸！"
+  },
+  "civ_tower": {
+   "name": "水塔",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    1,
+    1
+   ],
+   "hp": 500,
+   "power": 0,
+   "cost": 0,
+   "sight": 3,
+   "buildable": false,
+   "civ": true,
+   "desc": "平民設施。"
+  },
+  "civ_barn": {
+   "name": "農舍",
+   "faction": "neutral",
+   "role": "civ",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 700,
+   "power": 0,
+   "cost": 0,
+   "sight": 3,
+   "buildable": false,
+   "civ": true,
+   "garrison": 4,
+   "desc": "步兵可進駐並從中射擊。"
+  },
+  "oil": {
+   "name": "油井",
+   "faction": "neutral",
+   "role": "oil",
+   "cat": "none",
+   "size": [
+    2,
+    2
+   ],
+   "hp": 1000,
+   "power": 0,
+   "cost": 1000,
+   "sight": 3,
+   "buildable": false,
+   "desc": "用工程師佔領後持續提供資金。"
+  }
+ },
+ "BUILD_ORDER": {
+  "building": [
+   "a_power",
+   "a_ref",
+   "a_bar",
+   "a_fac",
+   "a_radar",
+   "a_yard",
+   "a_dronehub",
+   "a_bank",
+   "a_tech",
+   "a_sw",
+   "s_power",
+   "s_ref",
+   "s_bar",
+   "s_fac",
+   "s_radar",
+   "s_yard",
+   "s_dronehub",
+   "s_gas",
+   "s_tech",
+   "s_sw"
+  ],
+  "defense": [
+   "a_wall",
+   "a_pill",
+   "a_aa",
+   "a_ewt",
+   "a_prism",
+   "s_wall",
+   "s_sentry",
+   "s_flak",
+   "s_ewt",
+   "s_tcoil"
+  ],
+  "infantry": [
+   "a_gi",
+   "a_rocket",
+   "a_eng",
+   "a_jav",
+   "a_spy",
+   "a_cmdo",
+   "s_con",
+   "s_flak",
+   "s_eng",
+   "s_tesla",
+   "s_guerrilla",
+   "s_agent"
+  ],
+  "vehicle": [
+   "a_tank",
+   "a_ifv",
+   "a_harv",
+   "a_ew",
+   "a_himars",
+   "a_beam",
+   "a_mcv",
+   "a_fpv",
+   "a_tb2",
+   "a_jet",
+   "s_tank",
+   "s_flaktrk",
+   "s_harv",
+   "s_ew",
+   "s_arty",
+   "s_tos",
+   "s_iskander",
+   "s_mammoth",
+   "s_mcv",
+   "s_lancet",
+   "s_shahed",
+   "s_airship",
+   "a_apache",
+   "a_type10",
+   "a_k9",
+   "a_hf",
+   "s_bmpt",
+   "s_hwasong",
+   "s_technical"
+  ],
+  "naval": [
+   "a_destroyer",
+   "a_carrier",
+   "a_cvn",
+   "a_tuojiang",
+   "a_seadrone",
+   "s_sub",
+   "s_dread",
+   "s_cvn",
+   "s_fastboat"
+  ]
+ },
+ "SUPER": {
+  "storm": {
+   "name": "雷暴打擊",
+   "charge": 300.0,
+   "target": "area",
+   "radius": 3.8,
+   "desc": "召喚雷暴轟擊目標區域"
+  },
+  "nuke": {
+   "name": "核子飛彈",
+   "charge": 300.0,
+   "target": "area",
+   "radius": 4.5,
+   "desc": "毀滅性的核打擊"
+  },
+  "sanction": {
+   "name": "金融制裁",
+   "charge": 210.0,
+   "target": "enemy",
+   "radius": 0.0,
+   "desc": "凍結敵方 30% 資金，90 秒內收入與生產大減"
+  },
+  "energy": {
+   "name": "能源斷供",
+   "charge": 210.0,
+   "target": "enemy",
+   "radius": 0.0,
+   "desc": "切斷敵方能源 60 秒，全面停電"
+  },
+  "swarm": {
+   "name": "無人機蜂群",
+   "charge": 150.0,
+   "target": "area",
+   "radius": 2.5,
+   "desc": "派出自殺無人機群攻擊目標區域"
+  },
+  "scan": {
+   "name": "星鏈偵察",
+   "charge": 90.0,
+   "target": "area",
+   "radius": 11.0,
+   "desc": "衛星掃描，永久揭露大片區域"
+  },
+  "jam": {
+   "name": "GPS 干擾",
+   "charge": 120.0,
+   "target": "area",
+   "radius": 6.0,
+   "desc": "區域內敵方無人機墜毀、防禦塔失效 25 秒"
+  },
+  "paradrop": {
+   "name": "空降部隊",
+   "charge": 180.0,
+   "target": "area",
+   "radius": 2.0,
+   "desc": "運輸機空投一整隊步兵到目標位置"
+  },
+  "barrage": {
+   "name": "飛彈齊射",
+   "charge": 200.0,
+   "target": "area",
+   "radius": 4.0,
+   "desc": "10 枚彈道飛彈覆蓋轟擊目標區域"
+  },
+  "strait": {
+   "name": "雄風飛彈",
+   "charge": 160.0,
+   "target": "area",
+   "radius": 3.0,
+   "desc": "岸置反艦飛彈齊射，對艦艇與車輛傷害加倍"
+  },
+  "militia": {
+   "name": "全民動員",
+   "charge": 150.0,
+   "target": "self",
+   "radius": 0.0,
+   "desc": "立即在基地集結 10 名民兵"
+  },
+  "blockade": {
+   "name": "海峽封鎖",
+   "charge": 200.0,
+   "target": "area",
+   "radius": 5.0,
+   "desc": "反艦飛彈與無人艇重創區域內敵艦，並讓敵方收入下降 60 秒"
+  },
+  "armor": {
+   "name": "鋼鐵洪流",
+   "charge": 240.0,
+   "target": "self",
+   "radius": 0.0,
+   "desc": "戰車工廠立即送出 3 輛重型坦克"
+  },
+  "allyaid": {
+   "name": "盟友支援",
+   "charge": 150.0,
+   "target": "area",
+   "radius": 3.0,
+   "desc": "呼叫盟友：盟友的超級武器若已就緒則轟擊目標，否則派出一支部隊支援"
+  },
+  "df": {
+   "name": "東風快遞",
+   "charge": 220.0,
+   "target": "area",
+   "radius": 3.0,
+   "desc": "6 枚高超音速飛彈快速命中目標，對建築與艦艇特別有效"
+  },
+  "cyber": {
+   "name": "網路作戰",
+   "charge": 180.0,
+   "target": "enemy",
+   "radius": 0.0,
+   "desc": "駭入敵方網路：停電 20 秒、防禦癱瘓 15 秒、雷達失效 40 秒，並竊取 10% 資金"
+  }
+ },
+ "POWER_ORDER": [
+  "nuke",
+  "storm",
+  "sanction",
+  "energy",
+  "cyber",
+  "paradrop",
+  "barrage",
+  "strait",
+  "militia",
+  "blockade",
+  "armor",
+  "df",
+  "allyaid",
+  "swarm",
+  "jam",
+  "scan"
+ ],
+ "COUNTRIES": {
+  "usa": {
+   "name": "美國",
+   "faction": "allies",
+   "flag": [
+    [
+     0.15,
+     0.25,
+     0.6
+    ],
+    [
+     0.85,
+     0.15,
+     0.15
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "power": "paradrop",
+   "desc": "空降部隊：空投整隊步兵。空軍單位便宜 15%。可建造航空母艦。",
+   "cost": {
+    "kind:air": 0.85
+   }
+  },
+  "japan": {
+   "name": "日本",
+   "faction": "allies",
+   "flag": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.85,
+     0.1,
+     0.15
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "desc": "精密工業：載具生產快 25%，載具生命 +10%。",
+   "time": {
+    "kind:veh": 0.8
+   },
+   "hp": {
+    "kind:veh": 1.1
+   }
+  },
+  "korea": {
+   "name": "韓國",
+   "faction": "allies",
+   "flag": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.1,
+     0.25,
+     0.6
+    ],
+    [
+     0.85,
+     0.15,
+     0.2
+    ]
+   ],
+   "desc": "砲兵強國：火箭砲車便宜 25%、生命 +25%；步兵移動 +10%。",
+   "cost": {
+    "id:a_himars": 0.75
+   },
+   "hp": {
+    "id:a_himars": 1.25
+   },
+   "speed": {
+    "kind:inf": 1.1
+   }
+  },
+  "taiwan": {
+   "name": "台灣",
+   "faction": "allies",
+   "flag": [
+    [
+     0.85,
+     0.1,
+     0.15
+    ],
+    [
+     0.1,
+     0.2,
+     0.6
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "power": "strait",
+   "desc": "不對稱防禦：防禦建築便宜 25%、生命 +30%；標槍兵便宜 30%。雄風飛彈齊射。",
+   "cost": {
+    "cat:defense": 0.75,
+    "id:a_jav": 0.7
+   },
+   "hp": {
+    "cat:defense": 1.3
+   }
+  },
+  "ukraine": {
+   "name": "烏克蘭",
+   "faction": "allies",
+   "flag": [
+    [
+     0.1,
+     0.4,
+     0.8
+    ],
+    [
+     0.98,
+     0.82,
+     0.1
+    ],
+    [
+     0.98,
+     0.82,
+     0.1
+    ]
+   ],
+   "desc": "無人機大國：FPV 與 TB2 便宜 35%，蜂群充能快 50%。",
+   "cost": {
+    "id:a_fpv": 0.65,
+    "id:a_tb2": 0.65
+   },
+   "charge": {
+    "swarm": 1.5
+   }
+  },
+  "russia": {
+   "name": "俄羅斯",
+   "faction": "soviet",
+   "flag": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.1,
+     0.25,
+     0.65
+    ],
+    [
+     0.85,
+     0.12,
+     0.12
+    ]
+   ],
+   "power": "armor",
+   "desc": "重裝甲：坦克生命 +20%；TOS 與伊斯坎德爾便宜 20%。鋼鐵洪流。",
+   "hp": {
+    "id:s_tank": 1.2,
+    "id:s_mammoth": 1.2
+   },
+   "cost": {
+    "id:s_tos": 0.8,
+    "id:s_iskander": 0.8
+   }
+  },
+  "nkorea": {
+   "name": "北韓",
+   "faction": "soviet",
+   "flag": [
+    [
+     0.1,
+     0.25,
+     0.6
+    ],
+    [
+     0.85,
+     0.1,
+     0.12
+    ],
+    [
+     0.1,
+     0.25,
+     0.6
+    ]
+   ],
+   "power": "barrage",
+   "desc": "砲兵與飛彈：火砲車便宜 30%、步兵便宜 20%。彈道飛彈齊射。",
+   "cost": {
+    "id:s_arty": 0.7,
+    "kind:inf": 0.8
+   }
+  },
+  "iran": {
+   "name": "伊朗",
+   "faction": "soviet",
+   "flag": [
+    [
+     0.15,
+     0.6,
+     0.25
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.85,
+     0.12,
+     0.12
+    ]
+   ],
+   "desc": "無人機工業：見證者無人機便宜 40%、生產快 30%，蜂群充能快 30%。",
+   "cost": {
+    "id:s_shahed": 0.6
+   },
+   "time": {
+    "id:s_shahed": 0.7
+   },
+   "charge": {
+    "swarm": 1.3
+   }
+  },
+  "cuba": {
+   "name": "古巴",
+   "faction": "soviet",
+   "flag": [
+    [
+     0.1,
+     0.25,
+     0.6
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.85,
+     0.12,
+     0.12
+    ]
+   ],
+   "power": "militia",
+   "desc": "游擊戰：步兵便宜 20%、移動 +20%。全民動員。",
+   "cost": {
+    "kind:inf": 0.8
+   },
+   "speed": {
+    "kind:inf": 1.2
+   }
+  },
+  "china": {
+   "name": "中國",
+   "faction": "soviet",
+   "flag": [
+    [
+     0.85,
+     0.12,
+     0.1
+    ],
+    [
+     0.95,
+     0.8,
+     0.1
+    ],
+    [
+     0.85,
+     0.12,
+     0.1
+    ]
+   ],
+   "power": "df",
+   "desc": "工業產能：載具與艦艇便宜 10%、生產快 15%。東風快遞飛彈齊射。可建造航空母艦。",
+   "cost": {
+    "kind:veh": 0.9,
+    "kind:ship": 0.9
+   },
+   "time": {
+    "kind:veh": 0.85,
+    "kind:ship": 0.85
+   }
+  },
+  "yemen": {
+   "name": "葉門",
+   "faction": "soviet",
+   "flag": [
+    [
+     0.85,
+     0.12,
+     0.12
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.1,
+     0.1,
+     0.1
+    ]
+   ],
+   "power": "blockade",
+   "desc": "紅海封鎖：見證者便宜 25%，對艦艇傷害 +30%。海峽封鎖。",
+   "cost": {
+    "id:s_shahed": 0.75
+   },
+   "dmg_vs_ship": 1.3
+  }
+ },
+ "COUNTRY_ORDER": [
+  "usa",
+  "japan",
+  "korea",
+  "taiwan",
+  "ukraine",
+  "russia",
+  "china",
+  "nkorea",
+  "iran",
+  "cuba",
+  "yemen"
+ ]
+}

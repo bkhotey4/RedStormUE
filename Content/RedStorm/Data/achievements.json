@@ -1,0 +1,124 @@
+{
+ "ACH": [
+  {
+   "id": "first_blood",
+   "name": "初次勝利",
+   "desc": "贏得第一場遭遇戰或任務",
+   "icon": "★"
+  },
+  {
+   "id": "veteran",
+   "name": "沙場老兵",
+   "desc": "累計打完 10 場戰鬥",
+   "icon": "⚔"
+  },
+  {
+   "id": "commander",
+   "name": "指揮官",
+   "desc": "累計贏得 25 場戰鬥",
+   "icon": "✪"
+  },
+  {
+   "id": "hundred",
+   "name": "百人斬",
+   "desc": "累計消滅 100 個敵軍單位",
+   "icon": "☠"
+  },
+  {
+   "id": "thousand",
+   "name": "鋼鐵風暴",
+   "desc": "累計消滅 1,000 個敵軍單位",
+   "icon": "☢"
+  },
+  {
+   "id": "builder",
+   "name": "軍工複合體",
+   "desc": "累計生產 500 個單位",
+   "icon": "⚙"
+  },
+  {
+   "id": "tycoon",
+   "name": "礦業大亨",
+   "desc": "累計採礦收入達 $500,000",
+   "icon": "$"
+  },
+  {
+   "id": "blitz",
+   "name": "閃電戰",
+   "desc": "在 10 分鐘內贏得一場戰鬥",
+   "icon": "⚡"
+  },
+  {
+   "id": "spymaster",
+   "name": "諜報大師",
+   "desc": "成功滲透敵軍建築 10 次",
+   "icon": "◉"
+  },
+  {
+   "id": "super",
+   "name": "超級武器",
+   "desc": "發射特殊武器 20 次",
+   "icon": "✦"
+  },
+  {
+   "id": "diplomat",
+   "name": "外交官",
+   "desc": "締結 5 次條約",
+   "icon": "✎"
+  },
+  {
+   "id": "admiral",
+   "name": "航母打擊群",
+   "desc": "建造 5 艘航空母艦",
+   "icon": "⚓"
+  },
+  {
+   "id": "swarm",
+   "name": "蜂群",
+   "desc": "生產 100 架無人機",
+   "icon": "✈"
+  },
+  {
+   "id": "globetrotter",
+   "name": "環球部署",
+   "desc": "使用 6 個不同國家作戰",
+   "icon": "✈"
+  },
+  {
+   "id": "explorer",
+   "name": "戰場探勘",
+   "desc": "在 10 張不同地圖作戰",
+   "icon": "⌖"
+  },
+  {
+   "id": "campaign_basic",
+   "name": "基礎戰役完成",
+   "desc": "完成基礎戰役全部任務",
+   "icon": "✔"
+  },
+  {
+   "id": "campaign_hybrid",
+   "name": "混合戰爭英雄",
+   "desc": "完成混合戰爭戰役全部任務",
+   "icon": "✔"
+  },
+  {
+   "id": "streak5",
+   "name": "連勝 5 場",
+   "desc": "連續贏得 5 場戰鬥",
+   "icon": "✪"
+  },
+  {
+   "id": "ironwall",
+   "name": "鐵壁",
+   "desc": "贏得一場戰鬥且未損失任何建築",
+   "icon": "▣"
+  },
+  {
+   "id": "massacre",
+   "name": "殲滅戰",
+   "desc": "單場消滅 150 個敵軍單位",
+   "icon": "☠"
+  }
+ ]
+}
